@@ -1,16 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Hello from './Hello';
-import Clock from './Clock/Clock';
-import User from './User/User';
+import DoneLink from './ExtensionComp/DoneLink'
+import Hovering from './HighOrder/Hovering'
+import Content from './LoadWebsite/Content'
+import Menus from './Menu/Menus.jsx'
+import Tooltip from './Tooltip/Tooltip'
+import Timer from './Timer/TimerWrapper'
+import WebPackForm from './WebPackForm/Form'
 
-let dataUrl = 'https://vk.com/doc231356701_584848530?hash=4a54a9edf12dfb2b9f&dl=b076ca34d77545ab11'
+import './style.css'
 
 ReactDOM.render(
+
   <>
     <Hello name="Emil" />
-
-    <User data-url={dataUrl} />
+    <Tooltip children={"lorem ipum text"} text={"eto riba"} />
+    <Timer />
   </>,
   document.getElementById('root')
 );
